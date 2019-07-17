@@ -1,0 +1,163 @@
+﻿/* CSS Document */
+/* NO PADDING!!! */
+/* NO BORDER!!! */
+html {
+    background-color: black;
+}
+#KMusicPlayerPlus {
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: rgba(255, 255, 255, 0.75);
+    width: 350px;
+    height: 530px;
+}
+.KMainPart {
+    position: relative;
+    margin: 10px;
+    width: 330px;
+}
+.KBasicLook {
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.5) inset;
+}
+.KBg {
+    z-index: -1;
+    position: absolute;
+    width: 330px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+#KMusicPlayer {
+    height: 80px;
+    margin-bottom: 15px;
+}
+#KMusicList {
+    height: 415px;
+    margin-top: 15px;
+    display: none;
+}
+.KPLook {
+    height: 80px;
+    border-radius: 80px;
+}
+#KMPBg {
+    filter: blur(10px);
+}
+#KMPBg:hover {
+    cursor: pointer;
+}
+#KMPlayer {
+}
+.KLLook {
+    height: 415px;
+    border-radius: 35px;
+}
+#KMLBg {
+    filter: blur(25px);
+}
+#KMList {
+    overflow: auto;
+}
+#KMList::-webkit-scrollbar {
+    width:0px;
+}
+.KMPPart {
+    margin: 4px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.KMPPart:hover {
+    cursor: pointer;
+}
+#KOnAndOff {
+    margin-left: 10px;
+}
+#KPreAndNext {
+    margin-left: -5px
+}
+#KPrevious {
+    display: block;
+}
+#KNext {
+    display: block;
+}
+#KMusicInfo {
+    margin-left: -1px;
+    width: 210px;
+}
+#KMName {
+    margin: 0px 0px 7px;
+    font-size: 16px;
+}
+#KsingerWithLButton {
+    display: flex;
+}
+#KMSinger {
+    flex: 1 0;
+    margin: 7px 0px 0px;
+    font-size: 14px;
+}
+#KListShowAndHide {
+    transform: scale(1.25);
+    flex: 0 0;
+    margin: 10px 30px 0px;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+.KMLItem {
+    margin: 5px;
+    height: 70px;
+    border-radius: 60px;
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.5) inset;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.KMLItem:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.65) inset;
+}
+/*16:9的照片*/
+.KMLIImg {
+    margin: 9.5px 10px 9.5px 15px;
+    width: 68px;
+    height: 51px;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 51px;
+}
+.KMLICaption {
+    display: inline-block;
+    vertical-align: middle;
+}
+.KMLICaption>p {
+    margin: 0px;
+    display: inline-block;
+}
+.KMLICaption>i {
+    margin: 0px;
+    display: inline-block;
+}
+.KRotateBG {
+    animation: rotate-360 3s linear infinite;
+}
+@keyframes rotate-360 {
+ from {
+ -moz-transform: rotate(0);
+ -ms-transform: rotate(0);
+ -webkit-transform: rotate(0);
+ transform: rotate(0);
+}
+ to {
+ -moz-transform: rotate(360deg);
+ -ms-transform: rotate(360deg);
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);
+}
+}
